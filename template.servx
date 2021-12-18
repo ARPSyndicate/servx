@@ -1,0 +1,10 @@
+[Unit]
+Description = {description}
+After = network.target
+
+[Service]
+User = root
+ExecStart = /bin/bash -c "{command}"
+
+[Install]
+WantedBy = multi-user.target
