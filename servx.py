@@ -10,7 +10,7 @@ GREEN='\033[92m'
 YELLOW='\033[93m'
 CLEAR='\x1b[0m'
 
-print(BLUE + "ServX[1.0] by ARPSyndicate" + CLEAR)
+print(BLUE + "ServX[1.1] by ARPSyndicate" + CLEAR)
 print(YELLOW + "Bash Command as a Service" + CLEAR)
 
 if len(sys.argv)<2:
@@ -40,7 +40,7 @@ if(os.path.exists(ipath)):
     os.remove(ipath)
 
 print(GREEN + "[+] service created" + CLEAR)
-with open("template.servx", "r") as f:
+with open(temp, "r") as f:
     data = f.read()
     f.close()
 with open(ipath, "w") as f:
